@@ -1,0 +1,31 @@
+body {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+  }
+
+  h1 {
+    text-align: center;
+  }
+
+  .weather-card {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 20px;
+    margin-bottom: 20px;
+  }
+
+  .weather-card h2 {
+    margin-top: 0;
+  }
+
+  .weather-card p {
+    margin-bottom: 10px;
+  }
+
+  .search-history {
+    margin-top: 20px;
+  }
+
+  .search-history button {
+    margin-right: 5px;
+  }

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>dashboard weather</title>
+</head>
+<body>
+    <h1>weather Dashboard</h1>
+    <br>
+    <br>
+    <div>
+        <label for="city-input">Search for a city:</label>
+        <input type="text" id="city-input">
+        <button id="search-button">Search</button>
+    </div>
+    <div class="weather-card" id="current-weather-card">
+        <h2>Current Weather</h2>
+        <p>City: <span id="current-city"></span></p>
+        <p>Date: <span id="current-date"></span></p>
+        <p>Temperature: <span id="current-temperature"></span>&deg;C</p>
+        <p>Humidity: <span id="current-humidity"></span>%</p>
+        <p>Wind Speed: <span id="current-wind-speed"></span> km/h</p>
+        <p>Weather Icon: <img id="current-icon" alt="Current Weather Icon"></p>
+      </div>
+      <div class="weather-card" id="forecast-card">
+        <h2>5-Day Forecast</h2>
+        <div id="forecast-container"></div>
+      </div>
+    
+      <div class="search-history">
+        <h2>Search History</h2>
+        <button class="history-button">City 1</button>
+        <button class="history-button">City 2</button>
+        <button class="history-button">City 3</button>
+        <!-- Add more history buttons dynamically using JavaScript -->
+      </div>
+    
+</body>
+</html>
