@@ -7,6 +7,7 @@
     <title>dashboard weather</title>
 </head>
 <body>
+  <section>
     <h1>weather Dashboard</h1>
     <br>
     <br>
@@ -15,19 +16,28 @@
         <input type="text" id="city-input">
         <button id="search-button">Search</button>
     </div>
+    <br>
+
     <div class="weather-card" id="current-weather-card">
         <h2>Current Weather</h2>
         <p>City: <span id="current-city"></span></p>
         <p>Date: <span id="current-date"></span></p>
-        <p>Temperature: <span id="current-temperature"></span>&deg;C</p>
+        <p>Temperature: <span id="current-temperature"></span>&deg;F</p>
         <p>Humidity: <span id="current-humidity"></span>%</p>
-        <p>Wind Speed: <span id="current-wind-speed"></span> km/h</p>
+        <p>Wind Speed: <span id="current-wind-speed"></span>m/s</s></p>
         <p>Weather Icon: <img id="current-icon" alt="Current Weather Icon"></p>
-      </div>
+    </div>
+  </section>
+  <section>
       <div class="weather-card" id="forecast-card">
         <h2>5-Day Forecast</h2>
-        <div id="forecast-container"></div>
+        <div id="forecast-container">
+          <div>1</div>
+          <div>2</div>
+          <div>3</div>
+        </div>  
       </div>
+  </section>
     
       <div class="search-history">
         <h2>Search History</h2>
@@ -36,6 +46,11 @@
         <button class="history-button">City 3</button>
         <!-- Add more history buttons dynamically using JavaScript -->
       </div>
+      <script src="https://cdn.jsdelivr.net/npm/dayjs@1.11.3/dayjs.min.js"
+    integrity="sha256-iu/zLUB+QgISXBLCW/mcDi/rnf4m4uEDO0wauy76x7U="
+    crossorigin="anonymous"></script>
+
+      <script src="./script.js"></script>
     
 </body>
 </html>
