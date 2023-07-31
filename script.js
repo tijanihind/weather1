@@ -11,7 +11,7 @@ let humidity = document.getElementById("current-humidity");
 let windSpeed = document.getElementById("current-wind-speed");
 let icon = document.getElementById("current-icon");
 let forecastContainer = document.getElementById("forecast-container");
-
+let searchHistory =[];
 function kelvinToFahrenheit(kelvin) {
   return Math.round((kelvin - 273.15) * 9 / 5 + 32);
 }
@@ -63,3 +63,4 @@ searchButton.addEventListener("click", function () {
     })
     .catch(error => console.error('Error fetching current weather:', error));
 });
+ 
